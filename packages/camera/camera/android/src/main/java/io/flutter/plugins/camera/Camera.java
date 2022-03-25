@@ -201,6 +201,8 @@ class Camera
       final ResolutionPreset resolutionPreset,
       final boolean enableAudio) {
 
+    Size [] sizes = streamConfigurationMap.getOutputSizes (ImageFormat.JPEG);
+
     if (activity == null) {
       throw new IllegalStateException("No activity available!");
     }
